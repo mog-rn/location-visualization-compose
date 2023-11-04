@@ -5,7 +5,7 @@ import retrofit2.http.Body
 import retrofit2.http.Headers
 import retrofit2.http.POST
 
-interface DirectionsApiService {
+interface RoutesApiService {
     @Headers(
         "X-Goog-FieldMask: routes.polyline.encodedPolyline",
         "X-Goog-FieldMask: routes.duration",

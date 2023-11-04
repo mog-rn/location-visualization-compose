@@ -24,7 +24,7 @@ fun FetchRouteData(
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val apiService = retrofit.create(DirectionsApiService::class.java)
+    val apiService = retrofit.create(RoutesApiService::class.java)
     val responseState = remember { mutableStateOf<Response<RouteResponse>?>(null) }
 
     val routeRequest = RouteRequest(origin = Origin(origin), destination = Destination(destination))
