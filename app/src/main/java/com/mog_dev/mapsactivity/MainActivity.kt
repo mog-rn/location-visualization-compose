@@ -12,8 +12,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
            Column {
-               Map(location = )
                SearchBar()
+               Map()
+
            }
         }
     }
